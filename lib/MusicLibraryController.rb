@@ -89,14 +89,5 @@ class MusicLibraryController
     list = Song.all.sort_by {|song| song.name}
     puts "Playing #{list[input - 1].name} by #{list[input - 1].artist.name}" unless input < 1 || input > list.size
   end
-  
-=======
-    puts 
-    input = gets.strip
-    until input == "exit"
-      input = gets.strip
-    end
-  end
-  
->>>>>>> a274bac4d0b3d593519304517722999bd991261f
+
 end
