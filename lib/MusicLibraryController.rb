@@ -11,6 +11,7 @@ class MusicLibraryController
   def call
     puts "Welcome to your music library!"
     puts "To list all of your songs, enter 'list songs'."
+<<<<<<< HEAD
     puts "To list all of the artists in your library, enter 'list artists'."
     puts "To list all of the genres in your library, enter 'list genres'."
     puts "To list all of the songs by a particular artist, enter 'list artist'."
@@ -90,4 +91,13 @@ class MusicLibraryController
     puts "Playing #{list[input - 1].name} by #{list[input - 1].artist.name}" unless input < 1 || input > list.size
   end
   
+=======
+    puts 
+    input = gets.strip
+    until input == "exit"
+      input = gets.strip
+    end
+  end
+  
+>>>>>>> a274bac4d0b3d593519304517722999bd991261f
 end
